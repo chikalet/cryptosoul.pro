@@ -33,14 +33,14 @@ try {
 
     // Настройки вашей почты
     $mail->Host       =           'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'testcryptosoul@gmail.com'; // Логин на почте
-    $mail->Password   =             '22052003muha'; // Пароль на почте
+    $mail->Username   = 'emailadress'; // Логин на почте
+    $mail->Password   =             'emailpassword'; // Пароль на почте
     $mail->SMTPSecure =                      'ssl';
     $mail->Port       =                        465;
-    $mail->setFrom('testcryptosoul@gmail.com', 'Имя отправителя'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('emailadress', 'Имя отправителя'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('testcryptosoul@gmail.com');  // Ещё один, если нужен
+    $mail->addAddress('emailadress');  // Ещё один, если нужен
 
     // Прикрипление файлов к письму
 if (!empty($file['name'][0])) {
